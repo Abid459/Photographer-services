@@ -1,0 +1,2 @@
+"router": "install react-router-dom@6",
+"firebase-hook":"npm install --save react-firebase-hooks"
