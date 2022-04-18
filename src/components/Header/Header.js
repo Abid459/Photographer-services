@@ -25,10 +25,10 @@ const Header = () => {
     return (
         <header>
             <nav className='navbar'>
-                <NavLink to={'/'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Home</NavLink>
-                <NavLink to={'/checkout'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Checkout</NavLink>
-                <NavLink to={'/blogs'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Blog</NavLink>
-                <NavLink to={'/about'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>About</NavLink>
+                <NavLink to={'/'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Home</NavLink>
+                <NavLink to={'/checkout'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Checkout</NavLink>
+                <NavLink to={'/blogs'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Blog</NavLink>
+                <NavLink to={'/about'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>About</NavLink>
 
                 {
                     user? logOut:signIN
