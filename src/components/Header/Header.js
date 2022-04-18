@@ -19,12 +19,12 @@ const Header = () => {
 
     //elements
     const logOut =<>
-        <button onClick={()=>signOut(auth)}>Log Out</button>
+        <span style={{cursor:'pointer'}} onClick={()=>signOut(auth)}>Log Out</span>
     </>
     const signIN = <NavLink to={'/login'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Log In</NavLink>
     return (
         <header>
-            <nav>
+            <nav className='navbar'>
                 <NavLink to={'/'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Home</NavLink>
                 <NavLink to={'/checkout'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Checkout</NavLink>
                 <NavLink to={'/blogs'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Blog</NavLink>
@@ -33,7 +33,6 @@ const Header = () => {
                 {
                     user? logOut:signIN
                 }
-                
             </nav>
             <Routes>
                 <Route path='/' element={<Home></Home>}></Route>

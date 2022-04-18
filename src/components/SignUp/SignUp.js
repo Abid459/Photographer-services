@@ -33,14 +33,13 @@ const SignUp = () => {
     }
     const handlesubmit = (e) => {
         e.preventDefault();
-        createUserWithEmailAndPassword(email,password);
         console.log(email,password)
-        // if(  password === confirmPassword){
-        //     createUserWithEmailAndPassword(email,password)
-        // }
-        // else{
-        //     setError('Please confirm your password')
-        // }
+        if(  password === confirmPassword){
+            createUserWithEmailAndPassword(email,password ,{sendEmailVerification:true})
+        }
+        else{
+            setError('Please confirm your password')
+        }
     }
     
     return (

@@ -18,12 +18,53 @@
 }
 
 .App {
-    background: rgb(169, 169, 169);
+    background-image: url();
 }
 //-----global css end-----
 
 //haeder start
+.navbar{
+    padding: 30px 0;
+    text-align: right;
+    z-index: 10;
+    position: relative;
+    .active-nav{
+        background: rgb(76, 25, 25);
+        color:aliceblue;
+        padding:10px;
+        border-radius: 9px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .nav{
+        margin-right: 10px;
+        text-decoration: none;
+        color: white;
+    }
+}
+//------header end
 
+//home start 
+.banner {
+    background-image: url("../../public/img/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100vw;
+    // position: absolute;
+    margin-top: -90px;
+    top: 0;
+    color: aliceblue;
+    p{
+    }
+  }
+  .services{
+      color: rgb(255, 0, 0);
+      z-index: 111;
+      font-size: 5rem;
+      bottom: 0;
+  }
 //login form start
 .login-text {
     background: rgb(55, 55, 55);
