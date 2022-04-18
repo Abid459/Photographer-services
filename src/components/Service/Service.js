@@ -8,7 +8,6 @@ const Service = ({service}) => {
         <div className='servicediv
         ' style={{backgroundImage: `url(${service?.img})`}}>
             <div className="info">
-
             <p>{service?.name}</p>
             <p>Price: ${service?.price}</p>
             <small>{service?.description}</small>

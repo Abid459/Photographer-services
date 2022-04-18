@@ -36,6 +36,10 @@ button {
   background: #001424;
 }
 
+.manuBar {
+  display: none;
+}
+
 .brand {
   position: absolute;
   color: aliceblue;
@@ -186,7 +190,17 @@ button {
 
 .about-container .about {
   color: aliceblue;
-  padding: 30px;
+  padding: 30px 90px;
+  text-align: justify;
+}
+
+.about-container .about h3 {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.about-container .about hr {
+  margin-bottom: 20px;
 }
 
 .login-text {
@@ -283,6 +297,12 @@ button {
   color: #3486c0;
 }
 
+.chechout {
+  color: aliceblue;
+  text-align: center;
+  min-height: 100vh;
+}
+
 .gallery-container {
   margin-top: 90px;
   display: -ms-grid;
@@ -313,5 +333,33 @@ footer {
   color: aliceblue;
   text-align: center;
   background: #00174a;
+}
+
+@media only screen and (max-width: 600px) {
+  .manuBar {
+    color: aliceblue;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: block;
+  }
+  .manubarClick {
+    background: #000;
+  }
+  .gallery-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .gallery-container .gallery-info {
+    border-right: 0;
+  }
+  .gallery-container .gallery-info h4 {
+    margin-top: 0;
+  }
+  .gallery-container .gallery-info p {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

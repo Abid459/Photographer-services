@@ -1,5 +1,7 @@
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { signOut } from 'firebase/auth';
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink, Route, Routes } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -15,6 +17,7 @@ import SignUp from '../SignUp/SignUp';
 
 const Header = () => {
     const [user] = useAuthState(auth)
+    const [clicked,setClicked] =useState(false);
 
 
     //elements
@@ -24,12 +27,12 @@ const Header = () => {
     const signIN = <NavLink to={'/login'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Log In</NavLink>
     return (
         <header>
-            
+            <FontAwesomeIcon className='manuBar' onClick={()=>setClicked(!clicked)} icon={faBars}></FontAwesomeIcon>
             <nav className='navbar'>
-                <NavLink to={'/'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Home</NavLink>
-                <NavLink to={'/checkout'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Checkout</NavLink>
-                <NavLink to={'/blogs'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Blog</NavLink>
-                <NavLink to={'/about'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>About</NavLink>
+                <NavLink to={'/'} className={({ isActive }) => isActive ? 'active-nav nav' : {clicked}? 'manubarClick nav' : 'nav'}>Home</NavLink>
+                <NavLink to={'/checkout'} className={({ isActive }) => isActive ? 'active-nav nav' : {clicked}? 'manubarClick nav' : 'nav'}>Checkout</NavLink>
+                <NavLink to={'/blogs'} className={({ isActive }) => isActive ? 'active-nav nav' : {clicked}? 'manubarClick nav' : 'nav'}>Blog</NavLink>
+                <NavLink to={'/about'} className={({ isActive }) => isActive ? 'active-nav nav' : {clicked}? 'manubarClick nav' : 'nav'}>About</NavLink>
 
                 {
                     user ? logOut : signIN

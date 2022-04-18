@@ -2,8 +2,8 @@ import React from 'react';
 
 const Checkout = () => {
     return (
-        <div>
-            this is checkout
+        <div className='chechout'>
+            this is checkout page
         </div>
     );
 };
