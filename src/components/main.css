@@ -29,10 +29,18 @@ button {
   color: aliceblue;
   padding: 10px 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .App {
-  background: #cecece;
+  background: #001424;
+}
+
+.brand {
+  position: absolute;
+  color: aliceblue;
+  margin: 30px;
+  font-size: 2rem;
 }
 
 .navbar {
@@ -40,6 +48,7 @@ button {
   text-align: right;
   z-index: 10;
   position: relative;
+  margin-right: 30px;
 }
 
 .navbar .active-nav {
@@ -48,11 +57,11 @@ button {
   color: aliceblue;
   padding: 10px;
   border-radius: 9px;
-  margin-right: 10px;
   text-decoration: none;
 }
 
 .navbar .nav {
+  margin-right: 40px;
   background: #1d0046;
   margin-right: 10px;
   padding: 10px;
@@ -143,18 +152,30 @@ button {
 }
 
 .servicediv:hover {
-  -webkit-box-shadow: 0px 0px 14px -2px #009bd3;
-          box-shadow: 0px 0px 14px -2px #009bd3;
+  -webkit-box-shadow: 0px 0px 14px -2px #37caff;
+          box-shadow: 0px 0px 14px -2px #37caff;
 }
 
-.service::before {
+.servicediv::before {
   content: '';
   width: 100%;
   height: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.397);
+  background: rgba(0, 0, 0, 0.172);
   top: 0;
   left: 0;
+}
+
+.blogs-container {
+  color: aliceblue;
+  padding-bottom: 50px;
+}
+
+.blogs-container .blogs {
+  width: 70%;
+  margin: 40px auto;
+  border: 1px solid;
+  padding: 30px;
 }
 
 .login-text {

@@ -1,16 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Service = ({service}) => {
-    // const [name,img] = service;
+    const navigate = useNavigate();
     return (
+        
         <div className='servicediv
         ' style={{backgroundImage: `url(${service?.img})`}}>
             <div className="info">
 
             <p>{service?.name}</p>
-            <p>Price: $332</p>
+            <p>Price: ${service?.price}</p>
+            <small>{service?.description}</small>
             </div>
-            <button>Checkout</button>
+            <button onClick={()=>navigate('/checkout')}>Checkout</button>
             
             
         </div>

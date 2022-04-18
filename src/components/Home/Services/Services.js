@@ -3,9 +3,9 @@ import Service from '../../Service/Service';
 
 const Services = () => {
     const servicesInfo=[
-        {id:1, name:'Under Water photography', img : 'img/banner1.jpg'},
-        {id:2, name:'Under Water photography', img : 'img/banner3.jpg'},
-        {id:3, name:'Under Water photography', img : 'img/banner4.jpg'}
+        {id:1, name:'Under Water photography', img : 'img/banner1.jpg', price:280 , description:'thisis description' },
+        {id:2, name:'Under Water photography', img : 'img/banner3.jpg', price:280 , description:'thisis description' },
+        {id:3, name:'Under Water photography', img : 'img/banner4.jpg', price:280 , description:'thisis description' }
     ]
     return (
         <div className='services'>

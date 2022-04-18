@@ -13,7 +13,7 @@ const LogIn = () => {
 
 const navigate = useNavigate();
 const location = useLocation();
-const [user] = useAuthState(auth);
+const [user,loading] = useAuthState(auth);
 
     const handlesubmit = (e) => {
         e.preventDefault();
@@ -33,8 +33,8 @@ const [user] = useAuthState(auth);
                 <p>Log in</p>
             </div>
             <form onSubmit={handlesubmit} className="login">
-                <input type="email" name="email" placeholder='Email' />
-                <input type="password" name="password" placeholder='Password' />
+                <input type="email" name="email" placeholder='Email'  required/>
+                <input type="password" name="password" placeholder='Password' required/>
                 <button type='submit'>Log In</button>
                 <SocialSignIn></SocialSignIn>
                 <p>New User? <span onClick={()=>navigate('/signup')} style={{color:'blue',cursor:'pointer'}}>Register Here</span> </p>

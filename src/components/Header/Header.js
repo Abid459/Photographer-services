@@ -18,12 +18,13 @@ const Header = () => {
 
 
     //elements
-    const logOut =<>
-        <span style={{cursor:'pointer'}} onClick={()=>signOut(auth)}>Log Out</span>
+    const logOut = <>
+        <span style={{ cursor: 'pointer' }} onClick={() => signOut(auth)}>Log Out</span>
     </>
     const signIN = <NavLink to={'/login'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Log In</NavLink>
     return (
         <header>
+            
             <nav className='navbar'>
                 <NavLink to={'/'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Home</NavLink>
                 <NavLink to={'/checkout'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>Checkout</NavLink>
@@ -31,7 +32,7 @@ const Header = () => {
                 <NavLink to={'/about'} className={({ isActive }) => isActive ? 'active-nav nav' : 'nav'}>About</NavLink>
 
                 {
-                    user? logOut:signIN
+                    user ? logOut : signIN
                 }
             </nav>
             <Routes>
@@ -42,7 +43,7 @@ const Header = () => {
                         <Checkout></Checkout>
                     </RequireAuth>
                 }></Route>
-                <Route path='/blog' element={<Blogs></Blogs>}></Route>
+                <Route path='/blogs' element={<Blogs></Blogs>}></Route>
                 <Route path='/about' element={<About></About>}></Route>
                 <Route path='/login' element={<LogIn></LogIn>}></Route>
                 <Route path='/signup' element={<SignUp></SignUp>}></Route>
