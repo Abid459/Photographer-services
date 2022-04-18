@@ -52,7 +52,7 @@ const SignUp = () => {
                 <input type="password" name="password" placeholder='Password' />
                 <input type="password" name="confirmPassword" placeholder='Confirm Password' />
                 <button>sign Up</button>
-                <span>{error + error2}</span>
+                <span>{error && error}{error2&&error2}</span>
                 <SocialSignIn></SocialSignIn>
                 <p>Already Registered? <span onClick={()=>navigate('/login')} style={{color:'blue',cursor:'pointer'}}>Log In</span> </p>
             </form>

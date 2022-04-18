@@ -5,7 +5,7 @@ const Footer = () => {
     console.log(year)
     return (
         <footer>
-            This is footer {year}
+           © Wild View {year}
         </footer>
     );
 };

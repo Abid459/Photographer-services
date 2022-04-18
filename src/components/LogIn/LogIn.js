@@ -37,7 +37,7 @@ const [user,loading] = useAuthState(auth);
                 <input type="password" name="password" placeholder='Password' required/>
                 <button type='submit'>Log In</button>
                 <SocialSignIn></SocialSignIn>
-                <p>New User? <span onClick={()=>navigate('/signup')} style={{color:'blue',cursor:'pointer'}}>Register Here</span> </p>
+                <p>New User? <span onClick={()=>navigate('/signup')} style={{cursor:'pointer'}}>Register Here</span> </p>
             </form>
         </div>
     );

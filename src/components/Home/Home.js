@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import Gallery from '../Gallery/Gallery';
 import Banner from './Banner/Banner';
 import Services from './Services/Services';
 
@@ -9,6 +10,7 @@ const Home = () => {
             <div className="brand">Wild View</div>
             <Banner></Banner>
             <Services></Services>
+            <Gallery></Gallery>
             <Footer></Footer>
         </div>
     );
