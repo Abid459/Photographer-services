@@ -1,0 +1,98 @@
+.container-full {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App {
+  background: darkgray;
+}
+
+.login-text {
+  background: #373737;
+  height: 59px;
+  width: 400px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.login-text p {
+  color: #959595;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 400px;
+  background: #737373;
+  border-end-start-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.login input {
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  border: 0;
+  border-bottom: 1px solid;
+  margin-bottom: 2rem;
+  background: rgba(86, 86, 86, 0.154);
+  color: aliceblue;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.login button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+}
+
+.login .icons {
+  margin-top: 40px;
+}
+
+.login .icons .icon {
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  background: #7b7b7b;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.login .icons .icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const About = () => {
+const RequireAuth = () => {
     return (
         <div>
-            This is about
+            
         </div>
     );
 };
 
-export default About;
+export default RequireAuth;
