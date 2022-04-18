@@ -1,7 +1,7 @@
 import { faFacebook, faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init'
+import auth from '../firebase.init'
 import React from 'react';
 
 const SocialSignIn = () => {
