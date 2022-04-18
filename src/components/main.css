@@ -69,6 +69,7 @@ button {
   margin-right: 10px;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .banner {
@@ -236,6 +237,18 @@ button {
   border-radius: 5px;
   outline: 0;
   font-weight: 100;
+}
+
+.login .lastInput {
+  margin-bottom: 0;
+}
+
+.login .passforget {
+  margin-left: 200px;
+  text-align: right;
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: #3486c0;
 }
 
 .login button {

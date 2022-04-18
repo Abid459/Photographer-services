@@ -19,7 +19,7 @@ const Header = () => {
 
     //elements
     const logOut = <>
-        <span style={{ cursor: 'pointer' }} onClick={() => signOut(auth)}>Log Out</span>
+        <span className='nav' onClick={() => signOut(auth)}>Log Out</span>
     </>
     const signIN = <NavLink to={'/login'} className={({ isActive }) => isActive ? 'active-nav' : 'nav'}>Log In</NavLink>
     return (

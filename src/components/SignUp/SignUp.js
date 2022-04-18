@@ -12,7 +12,9 @@ const SignUp = () => {
         user,
         loading,
         error2,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+
+
     //states
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
@@ -35,7 +37,8 @@ const SignUp = () => {
         e.preventDefault();
         console.log(email,password)
         if(  password === confirmPassword){
-            createUserWithEmailAndPassword(email,password ,{sendEmailVerification:true})
+            createUserWithEmailAndPassword(email,password )
+            navigate('/login')
         }
         else{
             setError('Please confirm your password')

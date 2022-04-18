@@ -67,6 +67,7 @@ button{
         margin-right: 10px;
         text-decoration: none;
         color: white;
+        cursor: pointer;
     }
 }
 //------header end
@@ -221,7 +222,16 @@ button{
         outline: 0;
         font-weight: 100;
     }
-
+    .lastInput{
+        margin-bottom: 0;
+    }
+    .passforget{
+        margin-left: 200px;
+        text-align: right;
+        margin-bottom: 30px;
+        cursor: pointer;
+        color: #3486c0;
+    }
     button {
         padding: 10px 30px;
         border-radius: 5px;
